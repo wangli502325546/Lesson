@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选显卡</title>
+    <style>
+
+        body,div,ul,li{
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+            font-family: "微软雅黑", "宋体";
+            -webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;
+        }
+        ul,li{list-style-type: none;}
+        .tabBar{width:250px;height:30px;position:relative; margin-top:60px;margin-left:100px;}
+        .tabBar li{float:left;margin-right:10px;cursor:pointer;padding:0px 20px;width: 30px;height: 30px;line-height: 30px;text-align: center; background: #9da;}
+        .tabBar li.current{background: pink}
+        .con div{display:none;width: 400px;height: 400px;text-align:center;margin-top:92px;margin-left:100px;background-color:#9da;line-height: 400px;border-radius: 50%;}
+        .con div.cur{display: block;}
+
+    </style>
+	<script src='../jquery-1.11.3.js'></script>
+</head>
+<body>
+<div id="table-demo">
+    <ul class="tabBar">
+        <li class="current">青春</li>
+        <li>灌溉</li>
+        <li>光芒</li>
+    </ul>
+    <div class="con">
+        <div class="cur">纸上得来终觉浅</div>
+        <div>来吧,互相伤害吧</div>
+        <div>pretty cool!</div>
+    </div>
+</div>
+</div>
+	<script>
+		//查看jquery的版本号(建议用1.11的和1.8的) alert($.fn.jquery);
+		//应用原生js书写选显卡
+		//第一步：获取所需的元素
+	/*	var  tableDemo=document.getElementById('table-demo');
+		var  oLi=tableDemo.getElementsByClassName('tabBar')[0].getElementsByTagName('li');
+		var  oDiv=tableDemo.getElementsByClassName('con')[0].getElementsByTagName('div');
+		//第二步:绑定事件
+		var  len=oLi.length;
+		for (var i=0;i<len;i++){
+			var cur=oLi[i];
+			cur.index=i;//这是选显卡的关键
+			cur.onclick=function () {
+				for (var j=0;j<len;j++){
+					  oLi[j].className='';
+					  oDiv[j].className='';
+				}
+				oLi[this.index].className='current';
+				oDiv[this.index].className='cur';
+			}
+		}*/
+		/*jquery版本
+		var oLi=$('#table-demo>.tabBar').children('li');
+		var oDiv=$('#table-demo>.con').children('div');
+		console.log(oLi);
+		oLi.click(function () {
+			var index=$(this).index();
+			oLi.removeClass('current');
+			oDiv.removeClass('cur');
+			oLi.eq(index).addClass('current');
+			oDiv.eq(index).addClass('cur');
+		});*/
+	</script>
+</body>
+</html>

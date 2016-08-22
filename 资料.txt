@@ -1,0 +1,6 @@
+编辑器sublime(简称sb)官网:www.sublimetext.com
+sublime安装包官网:https://packagecontrol.io/   
+1.点开右上角的install  Now 把sublime 3的那段复制下来 
+2.打开sb找到view菜单下的show console  把刚才复制的那段话拷贝到光标所在的位置  按回车 然后按 ctrl+shift+p 然后搜pci 看下点回车 等会就能安装你想要安装的插件了
+
+jquery APi  文档：http://jquery.cuishifeng.cn/
